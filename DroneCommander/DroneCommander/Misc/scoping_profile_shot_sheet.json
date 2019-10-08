@@ -1,0 +1,162 @@
+{
+    "Flight-Sequence": [
+                        {
+                        "Gate-Sign": {
+                        "Tips": [
+                                 "Clear photo of gate sign."
+                                 ],
+                        "Packaging": "Overall"
+                        }
+                        },
+                        {
+                        "Ground-Photos": {
+                        "Tips": [
+                                 "See list below for ground photos"
+                                 ],
+                        "Notes": [
+                                  "Generator",
+                                  "Outside of Cabinets",
+                                  "Inside of Cabinets (if able to open)",
+                                  "CPU Stack (if applicable)",
+                                  "All Wired Connections into Cabinets"
+                                  ],
+                        "Packaging": "Overall"
+                        }
+                        },
+                        {
+                        "Bottom Anchor": {
+                        "Tips": [
+                                 "Showing condition and hardware of anchor."
+                                 ],
+                        "Packaging": "Overall"
+                        }
+                        },
+                        {
+                        "Overall Composition": {
+                        "Tips": [
+                                 "Shows all cell RADs."
+                                 ],
+                        "Packaging": "Overall"
+                        }
+                        },
+                        {
+                        "Beacon (If Applicable)": {
+                        "ActionItems": [
+                                        "Set POI",
+                                        "Activate AutoPilot"
+                                        ],
+                        "Tips": [
+                                 "Bottom of beacon level with horizon.",
+                                 "Setting to have ready for orbits."
+                                 ],
+                        "Packaging": "Overall"
+                        }
+                        },
+                        {
+                        "Autopilot Top Down Screenshot": {
+                        "ActionItems": [
+                                        "Use AutoPilot to set 30 º camera pitch"
+                                        ],
+                        "Tips": [
+                                 "Facing heading of 0º",
+                                 "This is helpful because POI window covers angle on DJI app - located in bottom left while in AutoPilot."
+                                 ],
+                        "Packaging": "Overall"
+                        }
+                        },
+                        {
+                        "Tower Descent Photos": {
+                        "Tips": [
+                                 "Photo every 2 sec / descent rate of 1.8 mph / 30 º Camera Pitch Down."
+                                 ],
+                        "Packaging": "Mapping"
+                        }
+                        },
+                        {
+                        "TSO Video": {
+                        "Tips": [
+                                 "Start at gate - 1 minute orbit of Overall Composition."
+                                 ],
+                        "Packaging": "Overall"
+                        }
+                        },
+                        {
+                        "Tower Base Photos": {
+                        "Tips": [
+                                 "Partial orbit around base of tower."
+                                 ],
+                        "Packaging": "Mapping"
+                        }
+                        },
+                        {
+                        "Tower Climb Photos": {
+                        "Tips": [
+                                 "Photo every 2 sec / ascent rate of 1.8 mph / 30 º Camera Pitch Down (Climb on different side than descent)."
+                                 ],
+                        "Packaging": "Mapping"
+                        }
+                        },
+                        {
+                        "30 º Down Orbit Photos": {
+                        "Tips": [
+                                 "120 Photos minimum - Approximate 4 minute orbit."
+                                 ],
+                        "Packaging": "Mapping"
+                        }
+                        },
+                        {
+                        "30 º Down Orbit Video": {
+                        "Tips": [
+                                 "1 minute orbit."
+                                 ],
+                        "Packaging": "Overall"
+                        }
+                        },
+                        {
+                        "30 º Up Orbit Photos": {
+                        "Tips": [
+                                 "120 Photos minimum - Approximate 4 minute orbit."
+                                 ],
+                        "Packaging": "Angle Up"
+                        }
+                        },
+                        {
+                        "30 º Up Orbit Video": {
+                        "ActionItems": [
+                                        "Exit POI"
+                                        ],
+                        "Tips": [
+                                 "1 minute orbit."
+                                 ],
+                        "Packaging": "Overall"
+                        }
+                        },
+                        {
+                        "Access Road": {
+                        "Tips": [
+                                 "Shows as much as possible of road to gate."
+                                 ],
+                        "Packaging": "Overall"
+                        }
+                        },
+                        {
+                        "Top Anchor": {
+                        "Tips": [
+                                 "Showing condition and hardware of anchor."
+                                 ],
+                        "Packaging": "Overall"
+                        }
+                        },
+                        {
+                        "Safety Cable Run Video": {
+                        "ActionItems": [
+                                        "Review and Package"
+                                        ],
+                        "Tips": [
+                                 "Continuous video of cable top to bottom - 1 mph."
+                                 ],
+                        "Packaging": "Overall"
+                        }
+                    }
+                ]
+}

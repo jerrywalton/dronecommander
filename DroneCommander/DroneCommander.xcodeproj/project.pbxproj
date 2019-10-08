@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		560D26FD20629DC3008A70AB /* HotPointMissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D26FC20629DC3008A70AB /* HotPointMissionVC.swift */; };
+		560F5F80204675010075089D /* HotPointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560F5F7F204675010075089D /* HotPointManager.swift */; };
+		561226972047933B00A47033 /* DJIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561226962047933B00A47033 /* DJIUtils.swift */; };
+		5612269920483CE700A47033 /* FlightControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5612269820483CE700A47033 /* FlightControllerManager.swift */; };
+		5612269B20483CF600A47033 /* GimbalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5612269A20483CF600A47033 /* GimbalManager.swift */; };
+		5612269D20483D0400A47033 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5612269C20483D0400A47033 /* CameraManager.swift */; };
+		5612269F204847A500A47033 /* BaseDJIProductListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5612269E204847A500A47033 /* BaseDJIProductListener.swift */; };
+		561226A52048BE7700A47033 /* PagedHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561226A42048BE7700A47033 /* PagedHorizontalView.swift */; };
+		56363AA72041B1F700167639 /* AttributedStringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56363AA62041B1F700167639 /* AttributedStringBuilder.swift */; };
+		56363AA92041E2B400167639 /* StartShotSequenceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56363AA82041E2B400167639 /* StartShotSequenceVC.swift */; };
+		564C07DD203F2694001133FC /* ShotInfoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564C07DC203F2694001133FC /* ShotInfoTVCell.swift */; };
+		564C07E4203F7502001133FC /* ShotSheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564C07E3203F7502001133FC /* ShotSheetManager.swift */; };
+		564C07E8203F824C001133FC /* scoping_profile_shot_sheet_v2.json in Resources */ = {isa = PBXBuildFile; fileRef = 564C07E7203F824C001133FC /* scoping_profile_shot_sheet_v2.json */; };
+		564D59072050AA90000EA27A /* PointingTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564D59062050AA90000EA27A /* PointingTouchView.swift */; };
+		564E5DBA203043B200D964EE /* PreFlightRiskAssessmentWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E5DB9203043B200D964EE /* PreFlightRiskAssessmentWidget.swift */; };
+		564E5DBC2030440400D964EE /* ShotSheetWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E5DBB2030440400D964EE /* ShotSheetWidget.swift */; };
+		564E5DBE20304EDA00D964EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E5DBD20304EDA00D964EE /* Constants.swift */; };
+		564E5DC020305AE700D964EE /* AircraftHeadingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E5DBF20305AE700D964EE /* AircraftHeadingWidget.swift */; };
+		564E5DC220305B1100D964EE /* AircraftCoordinatesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E5DC120305B1100D964EE /* AircraftCoordinatesWidget.swift */; };
+		564E5DC420305B3300D964EE /* GimbalAttitudeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E5DC320305B3300D964EE /* GimbalAttitudeWidget.swift */; };
+		564E5DCC2032036800D964EE /* PreFlightAssessmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E5DCB2032036800D964EE /* PreFlightAssessmentManager.swift */; };
+		564E5DE12034A33500D964EE /* PreFlightRiskAssessmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E5DE02034A33500D964EE /* PreFlightRiskAssessmentVC.swift */; };
+		56738120203A15B300615962 /* UIImage+color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5673811F203A15B300615962 /* UIImage+color.swift */; };
+		567F9D4C2025CED9002E9196 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567F9D4B2025CED9002E9196 /* AppDelegate.swift */; };
+		567F9D512025CED9002E9196 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 567F9D4F2025CED9002E9196 /* Main.storyboard */; };
+		567F9D542025CED9002E9196 /* DroneCommander.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 567F9D522025CED9002E9196 /* DroneCommander.xcdatamodeld */; };
+		567F9D562025CED9002E9196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 567F9D552025CED9002E9196 /* Assets.xcassets */; };
+		567F9D592025CED9002E9196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 567F9D572025CED9002E9196 /* LaunchScreen.storyboard */; };
+		567F9D6D2025D57F002E9196 /* VideoPreviewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567F9D6C2025D558002E9196 /* VideoPreviewer.framework */; };
+		567F9D6E2025D57F002E9196 /* VideoPreviewer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 567F9D6C2025D558002E9196 /* VideoPreviewer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		567F9D732025D60F002E9196 /* DefaultLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567F9D722025D60F002E9196 /* DefaultLayoutViewController.swift */; };
+		567FB020204B222B00D7A529 /* VideoPreviewerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567FB01F204B222B00D7A529 /* VideoPreviewerManager.swift */; };
+		567FB022204CA7A600D7A529 /* HotPointMissionWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567FB021204CA7A600D7A529 /* HotPointMissionWidget.swift */; };
+		5692E5522034FB4C00EFA5CA /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5692E5512034FB4C00EFA5CA /* PieChartView.swift */; };
+		5692E56720373AA400EFA5CA /* RiskAssessmentCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5692E56620373AA400EFA5CA /* RiskAssessmentCVCell.swift */; };
+		56A43C95205441A300BD7D16 /* PointingTouchContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A43C94205441A300BD7D16 /* PointingTouchContainerView.swift */; };
+		56B066C1203FD76E004E8DBA /* FlightSequenceCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B066C0203FD76E004E8DBA /* FlightSequenceCVCell.swift */; };
+		56B066DC20405DEC004E8DBA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B066DB20405DEC004E8DBA /* Utils.swift */; };
+		56B066DE20408F1D004E8DBA /* CenterViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B066DD20408F1D004E8DBA /* CenterViewFlowLayout.swift */; };
+		56C32652203D92B000E9344B /* RiskAssessmentResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C32651203D92B000E9344B /* RiskAssessmentResultsCell.swift */; };
+		56C32654203D93F800E9344B /* RiskAssessmentResultsWriteInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C32653203D93F800E9344B /* RiskAssessmentResultsWriteInCell.swift */; };
+		56D5D4AF203E877800537AFC /* scoping_profile_shot_sheet.json in Resources */ = {isa = PBXBuildFile; fileRef = 56D5D4AE203E877800537AFC /* scoping_profile_shot_sheet.json */; };
+		56F107012026CFB800DEE3F6 /* HotPointMissionVC_old.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F107002026CFB800DEE3F6 /* HotPointMissionVC_old.swift */; };
+		56F107042026CFE600DEE3F6 /* ShotSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F107032026CFE600DEE3F6 /* ShotSheetViewController.swift */; };
+		56F107092027965C00DEE3F6 /* ProductCommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F107082027965C00DEE3F6 /* ProductCommunicationManager.swift */; };
+		BAE5A5335B3F8E20EBA9E806 /* Pods_DroneCommander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF55296B07360E58C673B23 /* Pods_DroneCommander.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		567F9D6B2025D558002E9196 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 567F9D672025D558002E9196 /* VideoPreviewer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 02A543FD1C3C51CB0083C11B;
+			remoteInfo = VideoPreviewer;
+		};
+		567F9D6F2025D57F002E9196 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 567F9D672025D558002E9196 /* VideoPreviewer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 02A543FC1C3C51CB0083C11B;
+			remoteInfo = VideoPreviewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		567F9D712025D57F002E9196 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				567F9D6E2025D57F002E9196 /* VideoPreviewer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0AF55296B07360E58C673B23 /* Pods_DroneCommander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DroneCommander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		560D26FC20629DC3008A70AB /* HotPointMissionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotPointMissionVC.swift; sourceTree = "<group>"; };
+		560F5F7F204675010075089D /* HotPointManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotPointManager.swift; sourceTree = "<group>"; };
+		561226962047933B00A47033 /* DJIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJIUtils.swift; sourceTree = "<group>"; };
+		5612269820483CE700A47033 /* FlightControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightControllerManager.swift; sourceTree = "<group>"; };
+		5612269A20483CF600A47033 /* GimbalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimbalManager.swift; sourceTree = "<group>"; };
+		5612269C20483D0400A47033 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		5612269E204847A500A47033 /* BaseDJIProductListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDJIProductListener.swift; sourceTree = "<group>"; };
+		561226A42048BE7700A47033 /* PagedHorizontalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagedHorizontalView.swift; sourceTree = "<group>"; };
+		56363AA62041B1F700167639 /* AttributedStringBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringBuilder.swift; sourceTree = "<group>"; };
+		56363AA82041E2B400167639 /* StartShotSequenceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartShotSequenceVC.swift; sourceTree = "<group>"; };
+		564C07DC203F2694001133FC /* ShotInfoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotInfoTVCell.swift; sourceTree = "<group>"; };
+		564C07E3203F7502001133FC /* ShotSheetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotSheetManager.swift; sourceTree = "<group>"; };
+		564C07E7203F824C001133FC /* scoping_profile_shot_sheet_v2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scoping_profile_shot_sheet_v2.json; sourceTree = "<group>"; };
+		564D59062050AA90000EA27A /* PointingTouchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointingTouchView.swift; sourceTree = "<group>"; };
+		564E5DB9203043B200D964EE /* PreFlightRiskAssessmentWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreFlightRiskAssessmentWidget.swift; sourceTree = "<group>"; };
+		564E5DBB2030440400D964EE /* ShotSheetWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotSheetWidget.swift; sourceTree = "<group>"; };
+		564E5DBD20304EDA00D964EE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		564E5DBF20305AE700D964EE /* AircraftHeadingWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftHeadingWidget.swift; sourceTree = "<group>"; };
+		564E5DC120305B1100D964EE /* AircraftCoordinatesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftCoordinatesWidget.swift; sourceTree = "<group>"; };
+		564E5DC320305B3300D964EE /* GimbalAttitudeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimbalAttitudeWidget.swift; sourceTree = "<group>"; };
+		564E5DCB2032036800D964EE /* PreFlightAssessmentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreFlightAssessmentManager.swift; sourceTree = "<group>"; };
+		564E5DE02034A33500D964EE /* PreFlightRiskAssessmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreFlightRiskAssessmentVC.swift; sourceTree = "<group>"; };
+		5673811F203A15B300615962 /* UIImage+color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+color.swift"; sourceTree = "<group>"; };
+		567F9D482025CED9002E9196 /* DroneCommander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroneCommander.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		567F9D4B2025CED9002E9196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		567F9D502025CED9002E9196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		567F9D532025CED9002E9196 /* DroneCommander.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DroneCommander.xcdatamodel; sourceTree = "<group>"; };
+		567F9D552025CED9002E9196 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		567F9D582025CED9002E9196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		567F9D5A2025CED9002E9196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		567F9D672025D558002E9196 /* VideoPreviewer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VideoPreviewer.xcodeproj; path = VideoPreviewer/VideoPreviewer.xcodeproj; sourceTree = "<group>"; };
+		567F9D722025D60F002E9196 /* DefaultLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLayoutViewController.swift; sourceTree = "<group>"; };
+		567FB01F204B222B00D7A529 /* VideoPreviewerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewerManager.swift; sourceTree = "<group>"; };
+		567FB021204CA7A600D7A529 /* HotPointMissionWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotPointMissionWidget.swift; sourceTree = "<group>"; };
+		5692E5512034FB4C00EFA5CA /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		5692E563203722BE00EFA5CA /* PagedHorizontalView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PagedHorizontalView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5692E56620373AA400EFA5CA /* RiskAssessmentCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskAssessmentCVCell.swift; sourceTree = "<group>"; };
+		56A43C94205441A300BD7D16 /* PointingTouchContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointingTouchContainerView.swift; sourceTree = "<group>"; };
+		56B066C0203FD76E004E8DBA /* FlightSequenceCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSequenceCVCell.swift; sourceTree = "<group>"; };
+		56B066DB20405DEC004E8DBA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		56B066DD20408F1D004E8DBA /* CenterViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewFlowLayout.swift; sourceTree = "<group>"; };
+		56C32651203D92B000E9344B /* RiskAssessmentResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskAssessmentResultsCell.swift; sourceTree = "<group>"; };
+		56C32653203D93F800E9344B /* RiskAssessmentResultsWriteInCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskAssessmentResultsWriteInCell.swift; sourceTree = "<group>"; };
+		56D5D4AE203E877800537AFC /* scoping_profile_shot_sheet.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scoping_profile_shot_sheet.json; sourceTree = "<group>"; };
+		56F107002026CFB800DEE3F6 /* HotPointMissionVC_old.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotPointMissionVC_old.swift; sourceTree = "<group>"; };
+		56F107032026CFE600DEE3F6 /* ShotSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotSheetViewController.swift; sourceTree = "<group>"; };
+		56F107082027965C00DEE3F6 /* ProductCommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCommunicationManager.swift; sourceTree = "<group>"; };
+		66C0495BA808FA39F8EDAC7F /* Pods-DroneCommander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroneCommander.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DroneCommander/Pods-DroneCommander.debug.xcconfig"; sourceTree = "<group>"; };
+		C1E0D7E3711813081F58C528 /* Pods-DroneCommander.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroneCommander.release.xcconfig"; path = "Pods/Target Support Files/Pods-DroneCommander/Pods-DroneCommander.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		567F9D452025CED9002E9196 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				567F9D6D2025D57F002E9196 /* VideoPreviewer.framework in Frameworks */,
+				BAE5A5335B3F8E20EBA9E806 /* Pods_DroneCommander.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		560F5F7E204674D70075089D /* MissionControl */ = {
+			isa = PBXGroup;
+			children = (
+				560F5F7F204675010075089D /* HotPointManager.swift */,
+			);
+			path = MissionControl;
+			sourceTree = "<group>";
+		};
+		561226A020484A1D00A47033 /* DJI_Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5612269E204847A500A47033 /* BaseDJIProductListener.swift */,
+				561226962047933B00A47033 /* DJIUtils.swift */,
+				5612269820483CE700A47033 /* FlightControllerManager.swift */,
+				5612269A20483CF600A47033 /* GimbalManager.swift */,
+				5612269C20483D0400A47033 /* CameraManager.swift */,
+				567FB01F204B222B00D7A529 /* VideoPreviewerManager.swift */,
+			);
+			path = DJI_Managers;
+			sourceTree = "<group>";
+		};
+		564C07E5203F7510001133FC /* ShotSheet */ = {
+			isa = PBXGroup;
+			children = (
+				564C07E3203F7502001133FC /* ShotSheetManager.swift */,
+			);
+			path = ShotSheet;
+			sourceTree = "<group>";
+		};
+		564C07E6203F753E001133FC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				561226A020484A1D00A47033 /* DJI_Managers */,
+				560F5F7E204674D70075089D /* MissionControl */,
+				564E5DCA2032032900D964EE /* PreFlightAssessment */,
+				564C07E5203F7510001133FC /* ShotSheet */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		564E5DB52030426500D964EE /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				567F9D552025CED9002E9196 /* Assets.xcassets */,
+				567F9D522025CED9002E9196 /* DroneCommander.xcdatamodeld */,
+				564E5DBD20304EDA00D964EE /* Constants.swift */,
+				56D5D4AE203E877800537AFC /* scoping_profile_shot_sheet.json */,
+				564C07E7203F824C001133FC /* scoping_profile_shot_sheet_v2.json */,
+				56B066DB20405DEC004E8DBA /* Utils.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		564E5DB6203042B000D964EE /* Widget Customization */ = {
+			isa = PBXGroup;
+			children = (
+				564E5DB9203043B200D964EE /* PreFlightRiskAssessmentWidget.swift */,
+				564E5DBB2030440400D964EE /* ShotSheetWidget.swift */,
+				564E5DBF20305AE700D964EE /* AircraftHeadingWidget.swift */,
+				564E5DC120305B1100D964EE /* AircraftCoordinatesWidget.swift */,
+				564E5DC320305B3300D964EE /* GimbalAttitudeWidget.swift */,
+				567FB021204CA7A600D7A529 /* HotPointMissionWidget.swift */,
+			);
+			path = "Widget Customization";
+			sourceTree = "<group>";
+		};
+		564E5DCA2032032900D964EE /* PreFlightAssessment */ = {
+			isa = PBXGroup;
+			children = (
+				564E5DCB2032036800D964EE /* PreFlightAssessmentManager.swift */,
+				5692E56A20373BD500EFA5CA /* TableViewCells */,
+				5692E56B20373BE300EFA5CA /* CollecionViewCells */,
+			);
+			path = PreFlightAssessment;
+			sourceTree = "<group>";
+		};
+		567F9D3F2025CED9002E9196 = {
+			isa = PBXGroup;
+			children = (
+				567F9D4A2025CED9002E9196 /* DroneCommander */,
+				567F9D492025CED9002E9196 /* Products */,
+				C00A6D73323A53B3F8BB2528 /* Pods */,
+				ED179905F6CAAE424E1A140F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		567F9D492025CED9002E9196 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				567F9D482025CED9002E9196 /* DroneCommander.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		567F9D4A2025CED9002E9196 /* DroneCommander */ = {
+			isa = PBXGroup;
+			children = (
+				56F10706202795B900DEE3F6 /* Bootstrap */,
+				56F107072027963700DEE3F6 /* DJI Open Source */,
+				564C07E6203F753E001133FC /* Managers */,
+				564E5DB52030426500D964EE /* Misc */,
+				5692E54E2034FA9900EFA5CA /* OpenSource */,
+				56F107052027959900DEE3F6 /* Storyboards */,
+				56F107022026CFBE00DEE3F6 /* ViewControllers */,
+				56A43C932054416400BD7D16 /* Views */,
+				564E5DB6203042B000D964EE /* Widget Customization */,
+			);
+			path = DroneCommander;
+			sourceTree = "<group>";
+		};
+		567F9D682025D558002E9196 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				567F9D6C2025D558002E9196 /* VideoPreviewer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5692E54E2034FA9900EFA5CA /* OpenSource */ = {
+			isa = PBXGroup;
+			children = (
+				561226A42048BE7700A47033 /* PagedHorizontalView.swift */,
+				5692E5512034FB4C00EFA5CA /* PieChartView.swift */,
+				5673811F203A15B300615962 /* UIImage+color.swift */,
+				56B066DD20408F1D004E8DBA /* CenterViewFlowLayout.swift */,
+				56363AA62041B1F700167639 /* AttributedStringBuilder.swift */,
+			);
+			path = OpenSource;
+			sourceTree = "<group>";
+		};
+		5692E56A20373BD500EFA5CA /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				56C32651203D92B000E9344B /* RiskAssessmentResultsCell.swift */,
+				56C32653203D93F800E9344B /* RiskAssessmentResultsWriteInCell.swift */,
+				564C07DC203F2694001133FC /* ShotInfoTVCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		5692E56B20373BE300EFA5CA /* CollecionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				56B066C0203FD76E004E8DBA /* FlightSequenceCVCell.swift */,
+				5692E56620373AA400EFA5CA /* RiskAssessmentCVCell.swift */,
+			);
+			path = CollecionViewCells;
+			sourceTree = "<group>";
+		};
+		56A43C932054416400BD7D16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				564D59062050AA90000EA27A /* PointingTouchView.swift */,
+				56A43C94205441A300BD7D16 /* PointingTouchContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56F107022026CFBE00DEE3F6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				567F9D722025D60F002E9196 /* DefaultLayoutViewController.swift */,
+				56F107002026CFB800DEE3F6 /* HotPointMissionVC_old.swift */,
+				56F107032026CFE600DEE3F6 /* ShotSheetViewController.swift */,
+				564E5DE02034A33500D964EE /* PreFlightRiskAssessmentVC.swift */,
+				56363AA82041E2B400167639 /* StartShotSequenceVC.swift */,
+				560D26FC20629DC3008A70AB /* HotPointMissionVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		56F107052027959900DEE3F6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				567F9D4F2025CED9002E9196 /* Main.storyboard */,
+				567F9D572025CED9002E9196 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		56F10706202795B900DEE3F6 /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				567F9D4B2025CED9002E9196 /* AppDelegate.swift */,
+				567F9D5A2025CED9002E9196 /* Info.plist */,
+			);
+			path = Bootstrap;
+			sourceTree = "<group>";
+		};
+		56F107072027963700DEE3F6 /* DJI Open Source */ = {
+			isa = PBXGroup;
+			children = (
+				56F107082027965C00DEE3F6 /* ProductCommunicationManager.swift */,
+			);
+			path = "DJI Open Source";
+			sourceTree = "<group>";
+		};
+		C00A6D73323A53B3F8BB2528 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66C0495BA808FA39F8EDAC7F /* Pods-DroneCommander.debug.xcconfig */,
+				C1E0D7E3711813081F58C528 /* Pods-DroneCommander.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED179905F6CAAE424E1A140F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5692E563203722BE00EFA5CA /* PagedHorizontalView.framework */,
+				567F9D672025D558002E9196 /* VideoPreviewer.xcodeproj */,
+				0AF55296B07360E58C673B23 /* Pods_DroneCommander.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		567F9D472025CED9002E9196 /* DroneCommander */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 567F9D5D2025CED9002E9196 /* Build configuration list for PBXNativeTarget "DroneCommander" */;
+			buildPhases = (
+				4274DD409F31DB2F28C79F26 /* [CP] Check Pods Manifest.lock */,
+				567F9D442025CED9002E9196 /* Sources */,
+				567F9D452025CED9002E9196 /* Frameworks */,
+				567F9D462025CED9002E9196 /* Resources */,
+				CC58BBBDEB615803D9ACA43D /* [CP] Embed Pods Frameworks */,
+				8BF83AC51D1E9AA04AAFA418 /* [CP] Copy Pods Resources */,
+				567F9D712025D57F002E9196 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				567F9D702025D57F002E9196 /* PBXTargetDependency */,
+			);
+			name = DroneCommander;
+			productName = DroneCommander;
+			productReference = 567F9D482025CED9002E9196 /* DroneCommander.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		567F9D402025CED9002E9196 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Symbolic Languages";
+				TargetAttributes = {
+					567F9D472025CED9002E9196 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 567F9D432025CED9002E9196 /* Build configuration list for PBXProject "DroneCommander" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 567F9D3F2025CED9002E9196;
+			productRefGroup = 567F9D492025CED9002E9196 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 567F9D682025D558002E9196 /* Products */;
+					ProjectRef = 567F9D672025D558002E9196 /* VideoPreviewer.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				567F9D472025CED9002E9196 /* DroneCommander */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		567F9D6C2025D558002E9196 /* VideoPreviewer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VideoPreviewer.framework;
+			remoteRef = 567F9D6B2025D558002E9196 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		567F9D462025CED9002E9196 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564C07E8203F824C001133FC /* scoping_profile_shot_sheet_v2.json in Resources */,
+				567F9D592025CED9002E9196 /* LaunchScreen.storyboard in Resources */,
+				567F9D562025CED9002E9196 /* Assets.xcassets in Resources */,
+				567F9D512025CED9002E9196 /* Main.storyboard in Resources */,
+				56D5D4AF203E877800537AFC /* scoping_profile_shot_sheet.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4274DD409F31DB2F28C79F26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DroneCommander-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BF83AC51D1E9AA04AAFA418 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DroneCommander/Pods-DroneCommander-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC58BBBDEB615803D9ACA43D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DroneCommander/Pods-DroneCommander-frameworks.sh",
+				"${PODS_ROOT}/DJI-SDK-iOS/iOS_Mobile_SDK/DJISDK.framework",
+				"${PODS_ROOT}/DJI-UILibrary-iOS/iOS_UILibrary/DJIUILibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/UIView+draggable/UIView_draggable.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJISDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJIUILibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIView_draggable.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DroneCommander/Pods-DroneCommander-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		567F9D442025CED9002E9196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56363AA72041B1F700167639 /* AttributedStringBuilder.swift in Sources */,
+				564E5DBA203043B200D964EE /* PreFlightRiskAssessmentWidget.swift in Sources */,
+				567FB022204CA7A600D7A529 /* HotPointMissionWidget.swift in Sources */,
+				56F107092027965C00DEE3F6 /* ProductCommunicationManager.swift in Sources */,
+				56C32652203D92B000E9344B /* RiskAssessmentResultsCell.swift in Sources */,
+				567F9D542025CED9002E9196 /* DroneCommander.xcdatamodeld in Sources */,
+				561226972047933B00A47033 /* DJIUtils.swift in Sources */,
+				564E5DC220305B1100D964EE /* AircraftCoordinatesWidget.swift in Sources */,
+				56363AA92041E2B400167639 /* StartShotSequenceVC.swift in Sources */,
+				564E5DE12034A33500D964EE /* PreFlightRiskAssessmentVC.swift in Sources */,
+				5692E56720373AA400EFA5CA /* RiskAssessmentCVCell.swift in Sources */,
+				567FB020204B222B00D7A529 /* VideoPreviewerManager.swift in Sources */,
+				5612269920483CE700A47033 /* FlightControllerManager.swift in Sources */,
+				564E5DBC2030440400D964EE /* ShotSheetWidget.swift in Sources */,
+				567F9D732025D60F002E9196 /* DefaultLayoutViewController.swift in Sources */,
+				560F5F80204675010075089D /* HotPointManager.swift in Sources */,
+				564E5DCC2032036800D964EE /* PreFlightAssessmentManager.swift in Sources */,
+				567F9D4C2025CED9002E9196 /* AppDelegate.swift in Sources */,
+				5692E5522034FB4C00EFA5CA /* PieChartView.swift in Sources */,
+				5612269D20483D0400A47033 /* CameraManager.swift in Sources */,
+				564E5DC020305AE700D964EE /* AircraftHeadingWidget.swift in Sources */,
+				5612269F204847A500A47033 /* BaseDJIProductListener.swift in Sources */,
+				56C32654203D93F800E9344B /* RiskAssessmentResultsWriteInCell.swift in Sources */,
+				560D26FD20629DC3008A70AB /* HotPointMissionVC.swift in Sources */,
+				5612269B20483CF600A47033 /* GimbalManager.swift in Sources */,
+				56F107042026CFE600DEE3F6 /* ShotSheetViewController.swift in Sources */,
+				56B066DC20405DEC004E8DBA /* Utils.swift in Sources */,
+				56B066C1203FD76E004E8DBA /* FlightSequenceCVCell.swift in Sources */,
+				564E5DC420305B3300D964EE /* GimbalAttitudeWidget.swift in Sources */,
+				56738120203A15B300615962 /* UIImage+color.swift in Sources */,
+				561226A52048BE7700A47033 /* PagedHorizontalView.swift in Sources */,
+				56F107012026CFB800DEE3F6 /* HotPointMissionVC_old.swift in Sources */,
+				564E5DBE20304EDA00D964EE /* Constants.swift in Sources */,
+				564C07DD203F2694001133FC /* ShotInfoTVCell.swift in Sources */,
+				56A43C95205441A300BD7D16 /* PointingTouchContainerView.swift in Sources */,
+				564C07E4203F7502001133FC /* ShotSheetManager.swift in Sources */,
+				564D59072050AA90000EA27A /* PointingTouchView.swift in Sources */,
+				56B066DE20408F1D004E8DBA /* CenterViewFlowLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		567F9D702025D57F002E9196 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VideoPreviewer;
+			targetProxy = 567F9D6F2025D57F002E9196 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		567F9D4F2025CED9002E9196 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				567F9D502025CED9002E9196 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		567F9D572025CED9002E9196 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				567F9D582025CED9002E9196 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		567F9D5B2025CED9002E9196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		567F9D5C2025CED9002E9196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		567F9D5E2025CED9002E9196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66C0495BA808FA39F8EDAC7F /* Pods-DroneCommander.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UGZGH28A8A;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public\"";
+				INFOPLIST_FILE = "$(SRCROOT)/DroneCommander/Bootstrap/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.symboliclanguages.DroneCommander;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		567F9D5F2025CED9002E9196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1E0D7E3711813081F58C528 /* Pods-DroneCommander.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UGZGH28A8A;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public\"";
+				INFOPLIST_FILE = "$(SRCROOT)/DroneCommander/Bootstrap/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.symboliclanguages.DroneCommander;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		567F9D432025CED9002E9196 /* Build configuration list for PBXProject "DroneCommander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				567F9D5B2025CED9002E9196 /* Debug */,
+				567F9D5C2025CED9002E9196 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		567F9D5D2025CED9002E9196 /* Build configuration list for PBXNativeTarget "DroneCommander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				567F9D5E2025CED9002E9196 /* Debug */,
+				567F9D5F2025CED9002E9196 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		567F9D522025CED9002E9196 /* DroneCommander.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				567F9D532025CED9002E9196 /* DroneCommander.xcdatamodel */,
+			);
+			currentVersion = 567F9D532025CED9002E9196 /* DroneCommander.xcdatamodel */;
+			path = DroneCommander.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 567F9D402025CED9002E9196 /* Project object */;
+}
