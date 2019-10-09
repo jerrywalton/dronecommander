@@ -44,7 +44,7 @@ class DefaultLayoutViewController: DULDefaultLayoutViewController, DJIGimbalDele
         
         NotificationCenter.default.addObserver(self, selector: #selector(showShotSheetView), name: NSNotification.Name(rawValue: NotifShowShotSheetView), object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(showHotPointMissionView), name: NSNotification.Name(rawValue: NotifShowSetHotPointView), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleNotifShowSetHotPointView), name: NSNotification.Name(rawValue: NotifShowSetHotPointView), object: nil)
 
         NotificationCenter.default.addObserver(self, selector: #selector(showHotPointMissionView), name: NSNotification.Name(rawValue: NotifShowHotPointMissionView), object: nil)
         
